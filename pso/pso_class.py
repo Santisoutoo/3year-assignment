@@ -1,7 +1,6 @@
 import numpy as np
 
-
-class ParticleSwarmOptimization:
+class ParticleSwarmOptimization(object):
     """
     Particle Swarm Optimization (PSO) implementation.
 
@@ -9,8 +8,17 @@ class ParticleSwarmOptimization:
     social behavior of bird flocking or fish schooling.
     """
 
-    def __init__(self, objective_function, n_particles=20, dimensions=2, bounds=(0, 5),
-                 w=0.8, c1=0.1, c2=0.1, seed=100):
+    def __init__(
+        self,
+        objective_function: callable,
+        n_particles: int = 20,
+        dimensions: int = 2,
+        bounds: tuple[float, float] = (0, 5),
+        w: float = 0.8,
+        c1: float = 0.1,
+        c2: float = 0.1,
+        seed: int = 100
+    ):
         """
         Initialize the PSO algorithm.
 
