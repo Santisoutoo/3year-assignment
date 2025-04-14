@@ -1,5 +1,7 @@
 task_2/clustered_images
 task_2/dbscan_images
+task_3/data
+task_3/models
 task_2/spectral_cluster_images
 *.json
 *__pycache__
