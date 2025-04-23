@@ -5,3 +5,4 @@ task_3/models
 task_2/spectral_cluster_images
 *.json
 *__pycache__
+*.pt
